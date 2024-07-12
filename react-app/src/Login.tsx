@@ -1,7 +1,27 @@
 import "./App.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Login = () => {
+  let testflag = true; //To enable or disable verification features
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
+
+  function verify() {
+    if (testflag) {
+      if (!username || !password) {
+        alert("Please enter the required information.");
+      } else {
+        navigate("/home");
+      }
+    } else {
+      navigate("/home");
+    }
+  }
+
   return (
     <div className="blockdisplay">
       <div>
@@ -9,15 +29,21 @@ const Login = () => {
         <h1>USER LOGIN</h1>
       </div>
       <div>
-        <form>
-          <br />
-          <input type="text" id="username" placeholder="Username" />
-          <br />
-          <input type="password" id="password" placeholder="Password" />
-        </form>
-        <Link to="/home">
-          <button>LOG IN</button>
-        </Link>
+        <br />
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <br />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={verify}>LOG IN</button>
       </div>
       <div className="signuptext">
         <p>Don't have an account?</p>

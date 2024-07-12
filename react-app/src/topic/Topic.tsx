@@ -9,36 +9,66 @@ const Topic = () => {
           <img className="logo1" src="./src/images/arrow.png" />
         </Link>
       </div>
-      <span className="inline">
-        <img className="logo" src="./src/images/logo.png" />
+      <span className="inline2">
+        <img className="logo2" src="./src/images/logo.png" />
         <p className="header">TOPIC SELECTION</p>
       </span>
       <div>
         <span className="inline1">
           <div className="datablocks2">
-            <div className="datablock-wrapper"></div>
+            <Link className="nounder" to="/gameplay">
+              <div className="datablock-wrapper1">
+                <img className="topiclogo" src="./src/images/maths.png" />
+                <p className="underlogo"> Maths </p>
+              </div>
+            </Link>
           </div>
           <div className="datablocks2">
-            <div className="datablock-wrapper"></div>
+            <Link className="nounder" to="/gameplay">
+              <div className="datablock-wrapper1">
+                <img className="topiclogo2" src="./src/images/english.png" />
+                <p className="underlogo"> English </p>
+              </div>
+            </Link>
           </div>
         </span>
         <div>
           <span className="inline1">
             <div className="datablocks2">
-              <div className="datablock-wrapper"></div>
+              <Link className="nounder" to="/gameplay">
+                <div className="datablock-wrapper1">
+                  <img className="topiclogo2" src="./src/images/science.png" />
+                  <p className="underlogo"> Science </p>
+                </div>
+              </Link>
             </div>
             <div className="datablocks2">
-              <div className="datablock-wrapper"></div>
+              <Link className="nounder" to="/gameplay">
+                <div className="datablock-wrapper1">
+                  <img className="topiclogo2" src="./src/images/history.png" />
+                  <p className="underlogo"> History </p>
+                </div>
+              </Link>
             </div>
           </span>
         </div>
         <div>
           <span className="inline1">
             <div className="datablocks2">
-              <div className="datablock-wrapper"></div>
+              <Link className="nounder" to="/gameplay">
+                <div className="datablock-wrapper1">
+                  <img
+                    className="topiclogo2"
+                    src="./src/images/geography.png"
+                  />
+                  <p className="underlogo"> Geography </p>
+                </div>
+              </Link>
             </div>
             <div className="datablocks2">
-              <div className="datablock-wrapper"></div>
+              <div className="datablock-wrapper1">
+                <p className="underlogo2"> More coming soon... </p>
+              </div>
             </div>
           </span>
         </div>

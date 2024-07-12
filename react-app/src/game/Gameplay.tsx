@@ -5,10 +5,11 @@ import "../App";
 
 const Gameplay = () => {
   const [question, setQuestion] = useState(1);
-  const [givenQuestion, setgivenQuestion] = useState("-");
-  const [score, setScore] = useState(5);
-  const [typeno, settypeno] = useState(0);
+  const [givenQuestion, setgivenQuestion] = useState("");
+  const [score, setScore] = useState(0);
+  const [typeno, settypeno] = useState(1);
   const [seconds, setseconds] = useState(60);
+  const [selectedbutton, setSelectedButton] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,37 +23,38 @@ const Gameplay = () => {
   }, [seconds]);
 
   useEffect(() => {
-    if (question === 10) {
-      navigate("/");
+    if (question > 10) {
+      navigate("/gameend");
     }
   });
 
   function next() {
     setQuestion((prevQuestion) => prevQuestion + 1);
+    setSelectedButton(null);
     setseconds(60);
   }
 
   const questiontype = (typeno: number) => {
-    if (typeno == 1) {
+    if (typeno === 1) {
       return (
         <div>
           <div className="topheading">
-            <button className="datablocks4">
+            <button
+              className={`datablocks4 ${
+                selectedbutton === true ? "selected" : ""
+              }`}
+              onClick={() => setSelectedButton(true)}
+            >
               <p className="wrapper">True</p>
             </button>
-            <button className="datablocks4">
+            <button
+              className={`datablocks4 ${
+                selectedbutton === false ? "selected" : ""
+              }`}
+              onClick={() => setSelectedButton(false)}
+            >
               <p className="wrapper">False</p>
             </button>
-          </div>
-        </div>
-      );
-    }
-
-    if (typeno == 2) {
-      return (
-        <div>
-          <div className="topheading">
-            <input type="text" placeholder="Answer here"></input>
           </div>
         </div>
       );
@@ -60,18 +62,42 @@ const Gameplay = () => {
       return (
         <div>
           <div className="topheading">
-            <button className="datablocks4">
+            <button
+              id="ans1"
+              className={`datablocks4 ${
+                selectedbutton === "ans1" ? "selected" : ""
+              }`}
+              onClick={() => setSelectedButton("ans1")}
+            >
               <p className="wrapper">{}</p>
             </button>
-            <button className="datablocks4">
+            <button
+              id="ans2"
+              className={`datablocks4 ${
+                selectedbutton === "ans2" ? "selected" : ""
+              }`}
+              onClick={() => setSelectedButton("ans2")}
+            >
               <p className="wrapper">{}</p>
             </button>
           </div>
           <div className="topheading">
-            <button className="datablocks4">
+            <button
+              id="ans3"
+              className={`datablocks4 ${
+                selectedbutton === "ans3" ? "selected" : ""
+              }`}
+              onClick={() => setSelectedButton("ans3")}
+            >
               <p className="wrapper">{}</p>
             </button>
-            <button className="datablocks4">
+            <button
+              id="ans4"
+              className={`datablocks4 ${
+                selectedbutton === "ans4" ? "selected" : ""
+              }`}
+              onClick={() => setSelectedButton("ans4")}
+            >
               <p className="wrapper">{}</p>
             </button>
           </div>
@@ -86,7 +112,7 @@ const Gameplay = () => {
         <p className="item">ENGLISH</p>
       </div>
       <div>
-        <p className="question"> Time Left: {seconds}</p>
+        <p className="question"> Time Left: {seconds} seconds left</p>
         <p className="question"> QUESTION {question}:</p>
         <div className="givenques">
           <p> {givenQuestion} </p>

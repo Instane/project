@@ -65,6 +65,24 @@ button:hover {
   text-align: center;
 }
 
+.vic {
+  color: rgb(3, 199, 3);
+  text-align: center;
+}
+
+.urscore {
+  text-align: center;
+  font-weight: bold;
+}
+
+.draw {
+  color: grey;
+}
+
+.head1 {
+  font-size: 40px;
+}
+
 ::-ms-reveal {
   filter: invert(100%);
 }

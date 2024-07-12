@@ -9,6 +9,7 @@ import Profile from "./profile/Profile";
 import History from "./history/History";
 import Topic from "./topic/Topic";
 import Gameplay from "./game/Gameplay";
+import Gameend from "./Gameend";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/history" element={<History />} />
         <Route path="/topic" element={<Topic />} />
         <Route path="/gameplay" element={<Gameplay />} />
+        <Route path="/gameend" element={<Gameend />} />
       </Routes>
     </Router>
   );

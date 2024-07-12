@@ -1,12 +1,36 @@
 import "./Home.css";
-import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
+import { useState } from "react";
 
 const Home = () => {
-  let rank = 1,
-    total = 10,
-    won = 5,
-    lost = 5;
+  const [currentrank, setCurrentRank] = useState(1);
+  const [totalgames, setTotalGames] = useState(10);
+  const [totalwins, setTotalWins] = useState(5);
+  const [totallose, setTotalLose] = useState(5);
+
+  const ranks = () => {
+    if (currentrank === 1) {
+      return (
+        <div>
+          <img className="ranklogo" src="./src/images/bronze.png" />
+        </div>
+      );
+    }
+    if (currentrank === 2) {
+      return (
+        <div>
+          <img className="ranklogo" src="./src/images/silver.png" />
+        </div>
+      );
+    }
+    if (currentrank === 3) {
+      return (
+        <div>
+          <img className="ranklogo" src="./src/images/gold.png" />
+        </div>
+      );
+    }
+  };
 
   return (
     <div>
@@ -24,15 +48,15 @@ const Home = () => {
         <span className="inline">
           <div className="datablocks">
             <p className="blockheader">BATTLE DETAILS</p>
-            <li>Total Battles: {total}</li>
-            <li>Battles Won: {won}</li>
-            <li>Battles Lost: {lost}</li>
+            <li>Total Battles: {totalgames}</li>
+            <li>Battles Won: {totalwins}</li>
+            <li>Battles Lost: {totallose}</li>
           </div>
           &nbsp;&nbsp;&nbsp;
           <div className="datablocks">
-            <p className="blockheader">CURRENT LEAGUE</p>
             <div className="rank-wrapper">
-              <img className="ranklogo" src="./src/images/home.png" />
+              <p className="blockheaders1">CURRENT LEAGUE</p>
+              {ranks()}
             </div>
           </div>
         </span>

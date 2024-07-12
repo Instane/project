@@ -27,7 +27,7 @@
 }
 
 .datablocks4 {
-    display: inline-flex;
+  display: inline-flex;
   background-color:#EBD071;
   border-radius: 10px;
   width: 9em;
@@ -39,4 +39,8 @@
 
 .wrapper {
     margin: auto 35px;
+}
+
+.datablocks4.selected {
+    background-color: rgb(3, 182, 3)
 }

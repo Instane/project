@@ -1,117 +1,120 @@
-.logo {
-    width:auto;
-    height:auto;
-}
-
 .inline {
-    display:inline-flex;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
 }
 
 .header {
-  margin-top: 2em;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .userprof {
-  color:black;
+  color: black;
   text-align: center;
   font-weight: normal;
   font-size: 25px;
 }
 
 .profblock {
-  background-color:#EBD071;
+  background-color: #ebd071;
   border-radius: 10px;
-  resize: auto;
-  width: auto;
-  height: auto;
-  padding: 0% 2% 2% 5%;
-  margin: 5% auto;
-  box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
+  width: 18em;
+  padding: 2%;
+  margin: 1em auto;
+  box-shadow: 3px 5px 5px 0px rgb(211, 211, 211);
 }
 
 .profblock-wrapper {
-  padding-top: 2px
+  padding-top: 2px;
 }
 
 .proftext {
   font-size: 18px;
   font-weight: bold;
+  margin: 1em 10px;
 }
 
 .profdetail {
-  font-weight:normal;
-  display: inline-flex;
+  font-weight: normal;
+  display: inline;
   padding-left: 10px;
-  margin-top: 0%;
-  margin-bottom: 0%;
+}
+
+.profdetail.pw {
+  -webkit-text-security: disc;
 }
 
 .viewbutton {
   display: flex;
-  margin: auto;
-  text-align: center;
-}
-
-input.edit {
-  background-color: white;
-  border-style:solid;
-  color:black;
-  border-radius:10px;
-  width: 15rem;
-  height: 1.5rem;
-  font-size:1em;
-  left: 0;
-  margin: 2px auto;
-  box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
-}
-
-input.edit:hover {
-  background-color:rgb(238, 238, 238);
-}
-
-input.edit:focus {
-  outline:none;
-}
-
-.view {
-  background-color: #EBD071;
-  border: none;
-  color:black;
-  font-style: italic;
-  font-weight: bold;
-  border-radius:10px;
-  width: auto;
-  height: 2.2rem;
-  margin: auto 45px;
-  font-size: 15px;
-  box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
-  display: flex;
-  padding-top: 8px;
-  white-space: nowrap;
-}
-
-.view:hover {
-  background-color:#ddc46b;
-  cursor:pointer;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
 }
 
 .edit {
-  background-color: #EBD071;
-  border: none;
-  color:black;
-  font-style: italic;
-  font-weight: bold;
-  border-radius:10px;
-  width: 6rem;
-  height: 2.2rem;
-  margin: 15% 35% 10%;
-  font-size: 15px;
-  box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
+  background-color: white;
+  border: solid 1px #ccc;
+  color: black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 15rem;
+  height: 0.8rem;
+  font-size: 0.9em;
+  margin: 2px;
+  padding: 0.5em;
+  box-shadow: 3px 5px 5px 0px rgb(211, 211, 211);
 }
 
 .edit:hover {
-  background-color:#ddc46b;
-  cursor:pointer;
+  background-color: rgb(238, 238, 238);
+}
+
+.edit:focus {
+  outline: none;
+}
+
+.view {
+  background-color: #ebd071;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 8.3em;
+  height: 2.2rem;
+  margin: 1em;
+  font-size: 15px;
+  box-shadow: 3px 5px 5px 0px rgb(211, 211, 211);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.editbutton {
+  background-color: #ebd071;
+  border: none;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 6rem;
+  height: 2.2rem;
+  margin: 1em;
+  font-size: 15px;
+  box-shadow: 3px 5px 5px 0px rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+.editbutton:hover {
+  background-color: #ddc46b;
+}
+
+.logo4 {
+  width: 1.5em;
+  margin: 0 5px;
+}
+
+.logtext {
+  margin: auto;
 }

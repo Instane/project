@@ -8,9 +8,17 @@ export const useGlobalContext = () => {
 
 export const GlobalProvider = ({ children }) => {
   const [currentpage, setCurrentPage] = useState(1);
+  const [gametype, setGameType] = useState("");
 
   return (
-    <GlobalContext.Provider value={{ currentpage, setCurrentPage }}>
+    <GlobalContext.Provider
+      value={{
+        currentpage,
+        setCurrentPage,
+        gametype,
+        setGameType,
+      }}
+    >
       {children}
     </GlobalContext.Provider>
   );

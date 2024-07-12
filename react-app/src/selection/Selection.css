@@ -6,11 +6,12 @@
     margin: auto 10%;
   }
 
-  .logo2 {
+.logo3 {
     width: 3em;
+    height: 2.5em;
     left: 0;
     margin: auto 10%;
-  }
+}
 
 .logo1:hover {
   background-color: rgb(238, 238, 238);
@@ -21,7 +22,7 @@
 .header1 {
   width: auto;
   height: auto;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 
 .datablocks1 {
