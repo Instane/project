@@ -1,0 +1,16 @@
+.datablocks2 {
+    background-color:#EBD071;
+    border-radius: 10px;
+    width: 8em;
+    height: 8em;
+    padding: 0% 2% 0% 2%;
+    margin: 5% auto;
+    box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
+  }
+
+.inline1 {
+    display: inline-flex;
+    width: 100%;
+    margin: 0px;
+}
+

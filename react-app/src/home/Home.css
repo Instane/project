@@ -1,0 +1,83 @@
+body {
+  display: block;
+  margin: auto;
+}
+
+li {
+  color: black;
+  margin: 5% 0% 0% 7%;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.logo {
+  width:auto;
+  height:auto;
+}
+
+.inline {
+    display:inline-flex;
+    margin: auto;
+}
+
+.header {
+  margin-top: 2em;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.subhead {
+  margin-top: -1.5em;
+}
+
+.datablocks {
+  background-color:#EBD071;
+  border-radius: 10px;
+  width: 10em;
+  height: 10em;
+  padding: 0% 2% 0% 1%;
+  box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
+}
+
+.bigdatablocks {
+  background-color:#EBD071;
+  border-radius: 10px;
+  width: 20em;
+  height: 10em;
+  padding: 0% 2% 0% 5%;
+  margin: 5% auto;
+  box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
+}
+
+.forpass {
+  display:inline;
+  margin-left: -1.5%;
+  vertical-align: middle;
+}
+
+.blockheader {
+  font-weight: bold;
+  width: 9em;
+  text-decoration: underline;
+  margin-bottom: 0px;
+  margin-left: 10px
+}
+
+.forrank {
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.rank-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 2em;
+}
+
+.ranklogo {
+  width:40px;
+  margin: auto 0px 0px 15px;
+}

@@ -1,0 +1,42 @@
+.item {
+    font-weight:bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.question {
+    font-weight:bold;
+    margin: 20px 10px;
+}
+
+.topheading {
+    margin-bottom: 40px;
+    flex: 1;
+}
+
+.botheading {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.givenques {
+    width: 100%;
+    margin: 0 auto;
+    word-break: break-word;
+    text-align: left;
+}
+
+.datablocks4 {
+    display: inline-flex;
+  background-color:#EBD071;
+  border-radius: 10px;
+  width: 9em;
+  height: 4em;
+  padding: 0% 2% 0% 5%;
+  margin: auto 15px;
+  box-shadow: 3px 5px 5px 0px  rgb(211, 211, 211);
+}
+
+.wrapper {
+    margin: auto 35px;
+}
