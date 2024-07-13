@@ -7,7 +7,7 @@ const Gameplay = () => {
   const [question, setQuestion] = useState(1);
   const [givenQuestion, setgivenQuestion] = useState("");
   const [score, setScore] = useState(0);
-  const [typeno, settypeno] = useState(1);
+  const [typeno, settypeno] = useState("");
   const [seconds, setseconds] = useState(60);
   const [selectedbutton, setSelectedButton] = useState(null);
   const navigate = useNavigate();
@@ -34,8 +34,8 @@ const Gameplay = () => {
     setseconds(60);
   }
 
-  const questiontype = (typeno: number) => {
-    if (typeno === 1) {
+  const questiontype = (typeno: String) => {
+    if (typeno === "t") {
       return (
         <div>
           <div className="topheading">
